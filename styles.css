@@ -1,0 +1,128 @@
+body{
+  background-color: lightgrey;
+  font-family: Roboto,Arial;
+}
+@media(max-width:600px){
+  main{
+    grid-template-columns: 1fr;
+    margin-left:0px;
+  }
+  aside{
+    display:none;
+  }
+}
+@media(min-width:601px) and (max-width:900px){
+  main{
+    grid-template-columns: 1fr 1fr;
+    margin-left:0px;
+  }
+}
+@media(min-width:901px){
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left:250px;
+  }
+}
+header{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color: white;
+  height:50px;
+  z-index: 1;
+}
+.logo{
+  color: rgb(241, 119, 74);
+  font-size: large;
+  font-weight: bold;
+}
+.middle-section{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+.middle-section div{
+  margin-left:20px;
+  cursor: pointer;
+}
+.profile-icon{
+  background-color: rgb(234, 234, 234);
+  color:grey;
+  height:30px;
+  width:30px;
+  border-radius:15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+aside{
+  display:flex;
+  flex-direction:column;
+  position:fixed;
+  left:0px;
+  top:70px;
+  background-color: white;
+  height:100%;
+  width:250px;
+  padding-left:10px;
+}
+aside div{
+  margin-top:20px;
+  cursor: pointer;
+}
+
+main{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap:20px;
+  margin-top:100px;
+  margin-left:250px;
+}
+.job-card{
+  background-color: white;
+  margin:10px;
+  padding:10px;
+  border: 2px solid lightgray;
+  border-radius:7px;
+  display:flex;
+  flex-direction:column;
+}
+.job-title{
+  font-weight:bold;
+  font-size:large;
+  margin-bottom:5px;
+}
+.company-name{
+  margin-bottom:10px;
+}
+.divider{
+  background-color: lightgray;
+  width:100%;
+  height:0.5px;
+  margin-bottom: 10px;
+}
+.button{
+  background-color: rgb(243, 239, 239);
+  padding:5px;
+  border:1px solid grey;
+  border-radius:5px;
+  text-align:center;
+  width:100px;
+  margin-top:19px;
+  margin-right:5px;
+}
+.apply-button{
+  background-color: rgb(241, 119, 74);
+  color:white;
+  border:none;
+  border-radius:2px;
+  padding:4px 10px;
+  align-self:flex-end;
+  display: block;
+  cursor: pointer;
+}
